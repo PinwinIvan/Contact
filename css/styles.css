@@ -1,0 +1,109 @@
+* {
+    font-family: 'Pixelify Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f18608;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #8A1D1D;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.logo { 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    margin-left: 10px;
+}
+
+.menu { 
+    height: 80px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toptext h2{
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 126px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.opinionsForm{
+    background-color: #F3AA1B;
+    color: black;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 60px 25px;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+.opinionsForm input{
+    border-style: hidden hidden solid hidden ;
+    background-color: #F3AA1B;
+    border-bottom-color: black;
+    width: 100%;
+
+}
+
+.opinionsQ{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.messageField{
+    grid-column: 1 / span 2;
+}
+
+textarea{
+    max-width: 100%;
+}
+
+.sendMessageBtn{
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: #F4692D;
+}
