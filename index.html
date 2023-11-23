@@ -33,40 +33,77 @@
         </header>
 
         <div class="toptext">
-           <h2>Comments, questions?<br>
-            Send them our way.</h2>
+           <h1>Comments, questions?<br>
+            Send them our way.</h1>
         </div>
 
             <div class="opinionsForm">
                 
                     <form action="#" method ="POST" class="opinionsQ">
 
-                        <div style="margin-right:20px;">
+                        <div>
 
                             <label for="firstName">First Name</label><br>
                             <input id="firstName" placeholder="(Optional)">
                         </div>
+
                         <div>
                             <label for="lastName">Last Name</label><br>
                             <input id="lastName" placeholder="(Optional)">
                         </div>
+
                         <div>
                             <label for="userEmail">Email</label><br>
                             <input id="userEmail">                        
                         </div>
+
                         <div>    
                             <label for="userAlias">Alias</label><br>
                             <input id="userAlias" placeholder="(Optional)">
                         </div>
+
                         <div class="messageField">
                             <label for="userMessage">Message</label><br>
                             <textarea name="" id="userMessage" cols="53" rows="3" placeholder="Your message..."></textarea>
                         </div>
+
                         <div>
                             <input class="sendMessageBtn" type="submit" value="Send Message">
                         </div>
                     </form>
-             
+
             </div>
+            <div class="contactHeader">
+                <h2>Contact Information</h2>
+             </div>
+
+             <div class="contactInfo" id="contactInfo">
+                <nav>
+                    <ul>
+                    <li><a href="#"><i class="fas fa-file-alt"></i>pixangame@gmail.com</li></a>
+                    <li><a href="#"><i class="fas fa-headset"></i>In your walls</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="IMG/Logo/logo pixan.png" alt="Footer Logo">
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script>
+                function toggleMenu() {
+                    var nav = document.querySelector('nav ul');
+                    nav.classList.toggle('show');
+                }
+            </script>
 </body>
 </html>
