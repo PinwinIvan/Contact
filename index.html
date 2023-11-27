@@ -7,32 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/41bcea2ae3.js"></script>
 
     <title>Contact</title>
 </head>
 <body>
     
     <header>
-        <div class="header-content">
-                <div class="logo"><h1>Pixan</h1></div>
-            
-                <div class="menu" id="show-menu">
-                    <nav>
-                        <ul>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fas fa-home"></i>Home</li>
-                        <li><a href="#"><i class="fab fa-youtube"></i>Tutorials</li></a>
-                        <li><a href="#"><i class="fas fa-file-alt"></i>Blog</li></a>
-                        <li><a href="#"><i class="fas fa-headset"></i>Contact</li></a>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="IMG/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="headerLinks">
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="#" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="#" class="auth-link">Sign Up</a>
+            </div>
         </div>
-    
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    
-        </header>
+    </header>
 
         <div class="toptext">
            <h1>Comments, questions?<br>
@@ -102,6 +108,7 @@
                     </div>
                 </div>
             </footer>
+            
             <script>
                 function toggleMenu() {
                     var nav = document.querySelector('nav ul');
